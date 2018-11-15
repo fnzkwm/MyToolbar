@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.mytoolbar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/g2ph_logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/g2ph_logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NOActionBar">
+        <activity android:name=".IntroActivity"><!--처음뜨는 페이지-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity><!--메인에서만 뜬다.-->
+    </application>
+
+</manifest>
